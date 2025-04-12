@@ -103,9 +103,6 @@ Click below to watch a 5-minute demo showcasing all functionalities:
     npm run start
     ~~~
 
-7. **Access**:
-   - Backend: `http://localhost:3000`
-   - Frontend: `http://localhost:3001`
 
 ## 📬 Contact
 📧 **Email:** [bhartirounak@gmail.com](mailto:bhartirounak@gmail.com)  
