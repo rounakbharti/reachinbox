@@ -57,101 +57,57 @@ Click below to watch a 5-minute demo showcasing all functionalities:
 - **Storage**: Elasticsearch for emails, vector database for RAG context.
 - **Environment**: Docker for Elasticsearch, Node.js for backend, npm for frontend.
 
-## Project Structure
+## 📁 Project Structure
+
+```
 REACHINBOX/
 ├── backend/
 │   ├── node_modules/
-│   ├── public/
 │   ├── src/
-│   │   ├── config/
-│   │   │   ├── elasticClient.ts
-│   │   │   ├── emailSearch.ts
-│   │   │   ├── emailMapping.ts
-│   │   │   ├── imapConfig.ts
-│   │   ├── controllers/
-│   │   │   ├── emailController.ts
-│   │   ├── data/
-│   │   │   ├── reply_knowledge_base.json
-│   │   ├── embeddings/
-│   │   │   ├── categoryEmbeddings.ts
-│   │   │   ├── generateEmbeddings.ts
-│   │   ├── indexer/
-│   │   │   ├── storeInElastic.ts
-│   │   │   ├── pipeline.ts
-│   │   │   ├── classifyEmail.ts
-│   │   ├── routes/
-│   │   │   ├── emailRoutes.ts
-│   │   │   ├── index.ts
-│   │   ├── scripts/
-│   │   │   ├── indexReplyKnowledge.ts
-│   │   │   ├── initIndex.ts
-│   │   ├── services/
-│   │   │   ├── aiService.ts
-│   │   │   ├── classifierService.ts
-│   │   │   ├── elasticSearchService.ts
-│   │   │   ├── emailProcessor.ts
-│   │   │   ├── emailSearchService.ts
-│   │   │   ├── embeddingService.ts
-│   │   │   ├── geminiClient.ts
-│   │   │   ├── imapService.ts
-│   │   │   ├── notificationService.ts
-│   │   │   ├── replyKnowledgeService.ts
-│   │   │   ├── suggestReplyService.ts
-│   │   ├── test/
-│   │   │   ├── testRag.ts
-│   │   ├── utils/
-│   │   │   ├── categories.ts
-│   │   │   ├── cosineSimilarity.ts
-│   │   │   ├── elasticSearch.ts
-│   │   │   ├── embedding.ts
-│   │   │   ├── llm.ts
-│   │   │   ├── slackNotifier.ts
-│   │   │   ├── webhookTrigger.ts
-│   │   ├── app.ts
-│   │   ├── server.ts
-│   ├── .env
+│   │   ├── config/                 # ElasticSearch and IMAP configurations
+│   │   ├── controllers/            # API controllers
+│   │   ├── data/                   # Knowledge base files (e.g. JSON)
+│   │   ├── embeddings/             # Embedding scripts and configs
+│   │   ├── indexer/                # Elastic indexing logic
+│   │   ├── pipeline/               # Email classification pipeline
+│   │   ├── routes/                 # Express route handlers
+│   │   ├── scripts/                # Utility scripts for setup/indexing
+│   │   ├── services/               # Core logic for processing, AI, notifications
+│   │   ├── test/                   # RAG testing
+│   │   ├── utils/                  # Utility functions (LLMs, Slack, similarity)
+│   │   └── app.ts                  # Entry point for backend
+│   ├── .env                        # Environment variables
 │   ├── .gitignore
 │   ├── docker-compose.yml
-│   ├── package-lock.json
 │   ├── package.json
-│   ├── seedContext.ts
-│   ├── tsconfig.json
+│   ├── package-lock.json
+│   ├── seedContexts.ts
+│   └── tsconfig.json
+│
 ├── frontend/
 │   ├── node_modules/
-│   ├── public/
+│   ├── public/                    # Static assets
 │   ├── src/
-│   │   ├── assets/
-│   │   │   ├── react.svg
-│   │   ├── components/
-│   │   │   ├── EmailCard.tsx
-│   │   │   ├── EmailList.tsx
-│   │   │   ├── EmailView.tsx
-│   │   │   ├── FilterPanel.tsx
-│   │   │   ├── SearchBar.tsx
-│   │   ├── pages/
-│   │   │   ├── EmailDashboard.tsx
-│   │   │   ├── HomePage.tsx
-│   │   ├── services/
-│   │   │   ├── apiService.ts
-│   │   ├── styles/
-│   │   │   ├── App.css
-│   │   │   ├── index.css
-│   │   │   ├── main.ts
-│   │   ├── App.tsx
-│   │   ├── index.html
+│   │   ├── assets/                # Images and SVGs
+│   │   ├── components/            # Reusable UI components
+│   │   ├── pages/                 # Page-level components
+│   │   ├── services/              # API service handlers
+│   │   ├── styles/                # CSS styles
+│   │   ├── App.tsx                # Root component
+│   │   ├── index.tsx              # Entry point
 │   │   ├── main.tsx
-│   │   ├── vite-env.d.ts
-│   ├── .eslintrc.json
+│   │   └── vite-env.d.ts
 │   ├── .gitignore
+│   ├── eslint.config.js
 │   ├── index.html
-│   ├── package-lock.json
 │   ├── package.json
+│   ├── package-lock.json
 │   ├── README.md
+│   ├── tsconfig.app.json
 │   ├── tsconfig.json
-│   ├── vite.config.ts
-├── .gitignore
-└── OUTLINE
-
+│   ├── tsconfig.node.json
+│   └── vite.config.ts
+```
 
 
 ## Installation
