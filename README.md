@@ -13,7 +13,7 @@ Click below to watch a 5-minute demo showcasing all functionalities:
 | Emails fetched on the frontend        | ![Homepage](demo/img1.png) |
 | Filter by folder| ![Short URL](demo/img2.png) |
 | Filter by account     | ![History](demo/img3.png) |
-| Interested emails loaded on slack      | ![Analytics](demo/img4.png) |
+| Slack notifications for interested Emails      | ![Analytics](demo/img4.png) |
 | Webhook.site Triggered    | ![Click Logs](demo/img5.png) |
 | Locally hosted elasticsearch   | ![Expiration](demo/img6.png) |
 | Elasticsearch instance running in Docker      | ![Expired](demo/img7.png) |
@@ -61,8 +61,8 @@ Click below to watch a 5-minute demo showcasing all functionalities:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/REPO_NAME.git
-   cd REPO_NAME
+   git clone https://github.com/rounakbharti/reachinbox.git
+   cd reachinbox
 
 2. **Install Dependencies**:
     ~~~bash
@@ -80,11 +80,10 @@ Click below to watch a 5-minute demo showcasing all functionalities:
         IMAP_PASS2=your-password2
         IMAP_HOST2=imap.example.com
         IMAP_PORT2=993
-        ELASTICSEARCH_URL=http://localhost:9200
+        
         SLACK_WEBHOOK_URL=https://hooks.slack.com/services/xxx
         WEBHOOK_URL=https://webhook.site/your-id
-        VECTOR_DB_URL=your-vector-db-url
-        LLM_API_KEY=your-llm-api-key
+        GEMINI_API_KEY=your-gemini-api-key
         ~~~
 
 4. **Run Elasticsearch**:
