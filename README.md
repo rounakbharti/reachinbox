@@ -57,6 +57,103 @@ Click below to watch a 5-minute demo showcasing all functionalities:
 - **Storage**: Elasticsearch for emails, vector database for RAG context.
 - **Environment**: Docker for Elasticsearch, Node.js for backend, npm for frontend.
 
+## Project Structure
+REACHINBOX/
+├── backend/
+│   ├── node_modules/
+│   ├── public/
+│   ├── src/
+│   │   ├── config/
+│   │   │   ├── elasticClient.ts
+│   │   │   ├── emailSearch.ts
+│   │   │   ├── emailMapping.ts
+│   │   │   ├── imapConfig.ts
+│   │   ├── controllers/
+│   │   │   ├── emailController.ts
+│   │   ├── data/
+│   │   │   ├── reply_knowledge_base.json
+│   │   ├── embeddings/
+│   │   │   ├── categoryEmbeddings.ts
+│   │   │   ├── generateEmbeddings.ts
+│   │   ├── indexer/
+│   │   │   ├── storeInElastic.ts
+│   │   │   ├── pipeline.ts
+│   │   │   ├── classifyEmail.ts
+│   │   ├── routes/
+│   │   │   ├── emailRoutes.ts
+│   │   │   ├── index.ts
+│   │   ├── scripts/
+│   │   │   ├── indexReplyKnowledge.ts
+│   │   │   ├── initIndex.ts
+│   │   ├── services/
+│   │   │   ├── aiService.ts
+│   │   │   ├── classifierService.ts
+│   │   │   ├── elasticSearchService.ts
+│   │   │   ├── emailProcessor.ts
+│   │   │   ├── emailSearchService.ts
+│   │   │   ├── embeddingService.ts
+│   │   │   ├── geminiClient.ts
+│   │   │   ├── imapService.ts
+│   │   │   ├── notificationService.ts
+│   │   │   ├── replyKnowledgeService.ts
+│   │   │   ├── suggestReplyService.ts
+│   │   ├── test/
+│   │   │   ├── testRag.ts
+│   │   ├── utils/
+│   │   │   ├── categories.ts
+│   │   │   ├── cosineSimilarity.ts
+│   │   │   ├── elasticSearch.ts
+│   │   │   ├── embedding.ts
+│   │   │   ├── llm.ts
+│   │   │   ├── slackNotifier.ts
+│   │   │   ├── webhookTrigger.ts
+│   │   ├── app.ts
+│   │   ├── server.ts
+│   ├── .env
+│   ├── .gitignore
+│   ├── docker-compose.yml
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── seedContext.ts
+│   ├── tsconfig.json
+├── frontend/
+│   ├── node_modules/
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   │   ├── react.svg
+│   │   ├── components/
+│   │   │   ├── EmailCard.tsx
+│   │   │   ├── EmailList.tsx
+│   │   │   ├── EmailView.tsx
+│   │   │   ├── FilterPanel.tsx
+│   │   │   ├── SearchBar.tsx
+│   │   ├── pages/
+│   │   │   ├── EmailDashboard.tsx
+│   │   │   ├── HomePage.tsx
+│   │   ├── services/
+│   │   │   ├── apiService.ts
+│   │   ├── styles/
+│   │   │   ├── App.css
+│   │   │   ├── index.css
+│   │   │   ├── main.ts
+│   │   ├── App.tsx
+│   │   ├── index.html
+│   │   ├── main.tsx
+│   │   ├── vite-env.d.ts
+│   ├── .eslintrc.json
+│   ├── .gitignore
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── README.md
+│   ├── tsconfig.json
+│   ├── vite.config.ts
+├── .gitignore
+└── OUTLINE
+
+
+
 ## Installation
 
 1. **Clone the Repository**:
