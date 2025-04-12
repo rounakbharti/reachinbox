@@ -63,6 +63,7 @@ Click below to watch a 5-minute demo showcasing all functionalities:
    ```bash
    git clone https://github.com/rounakbharti/reachinbox.git
    cd reachinbox
+   cd backend
 
 2. **Install Dependencies**:
     ~~~bash
@@ -107,6 +108,6 @@ Click below to watch a 5-minute demo showcasing all functionalities:
 ## 📬 Contact
 📧 **Email:** [bhartirounak@gmail.com](mailto:bhartirounak@gmail.com)  
 🔗 **GitHub:** [https://github.com/rounakbharti](https://github.com/rounakbharti)  
-🌐 **Project Repository:** [TinyLane](https://github.com/rounakbharti/reachinbox)  
+🌐 **Project Repository:** [Reachinbox](https://github.com/rounakbharti/reachinbox)  
 
 💡 *For any issues or suggestions, feel free to open a GitHub issue!* 🚀
