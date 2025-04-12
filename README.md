@@ -10,14 +10,14 @@ Click below to watch a 5-minute demo showcasing all functionalities:
 ## 📸 Demo Screenshots
 | Feature          | Image |
 |-----------------|-------|
-| SignUp        | ![Homepage](demo/img2.png) |
-| Login| ![Short URL](demo/img1.png) |
-| Login successful     | ![History](demo/img3.png) |
-| Short URL Output       | ![Analytics](demo/img4.png) |
-| Homepage    | ![Click Logs](demo/img5.png) |
-| Homepage   | ![Expiration](demo/img6.png) |
-| Homepage      | ![Expired](demo/img7.png) |
-| Analytics     | ![Admin](demo/img8.png) |
+| Emails fetched on the frontend        | ![Homepage](demo/img1.png) |
+| Filter by folder| ![Short URL](demo/img2.png) |
+| Filter by account     | ![History](demo/img3.png) |
+| Interested emails loaded on slack      | ![Analytics](demo/img4.png) |
+| Webhook.site Triggered    | ![Click Logs](demo/img5.png) |
+| Locally hosted elasticsearch   | ![Expiration](demo/img6.png) |
+| Elasticsearch instance running in Docker      | ![Expired](demo/img7.png) |
+| R A G suggests a  perfect reply     | ![Admin](demo/img8.png) |
 
 ## Features Implemented
 
