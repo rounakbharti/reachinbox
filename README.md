@@ -1,6 +1,6 @@
-# ReachInbox Assignment - Onebox Email Aggregator
+# ReachInbox - Onebox Email Aggregator
 
-This repository contains my submission for the **Associate Backend Engineer** position at ReachInbox. The project is a feature-rich onebox email aggregator built with TypeScript and Node.js, featuring real-time IMAP synchronization, Elasticsearch-powered search, AI-based email categorization, Slack/webhook integration, a frontend interface, and AI-powered reply suggestions using Retrieval-Augmented Generation (RAG).
+The project is a feature-rich onebox email aggregator built with TypeScript and Node.js, featuring real-time IMAP synchronization, Elasticsearch-powered search, AI-based email categorization, Slack/webhook integration, a frontend interface, and AI-powered reply suggestions using Retrieval-Augmented Generation (RAG).
 
 ## Demo Video
 
